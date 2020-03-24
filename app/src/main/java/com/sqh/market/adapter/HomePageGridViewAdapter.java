@@ -61,8 +61,8 @@ public class HomePageGridViewAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.item_gridview, parent, false);
             holder = new ViewHolder();
-            holder.proName = convertView.findViewById(R.id.proName);
-            holder.imgUrl = convertView.findViewById(R.id.imgUrl);
+            holder.proName = (TextView) convertView.findViewById(R.id.proName);
+            holder.imgUrl = (ImageView) convertView.findViewById(R.id.imgUrl);
 
             convertView.setTag(holder);
         } else {

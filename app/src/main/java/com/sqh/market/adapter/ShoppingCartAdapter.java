@@ -192,17 +192,17 @@ public class ShoppingCartAdapter extends BaseAdapter {
         LinearLayout rlEdit;
 
         public ViewHolder(View itemView) {
-            ckOneChose = itemView.findViewById(R.id.ck_chose);
-            ivShowPic = itemView.findViewById(R.id.iv_show_pic);
-            ivSub = itemView.findViewById(R.id.iv_sub);
-            ivAdd = itemView.findViewById(R.id.iv_add);
-            tvCommodityName = itemView.findViewById(R.id.tv_commodity_name);
-            tvCommodityAttr = itemView.findViewById(R.id.tv_commodity_attr);
-            tvCommodityPrice = itemView.findViewById(R.id.tv_commodity_price);
-            tvCommodityNum = itemView.findViewById(R.id.tv_commodity_num);
-            tvCommodityShowNum = itemView.findViewById(R.id.tv_commodity_show_num);
-            tvCommodityDelete = itemView.findViewById(R.id.tv_commodity_delete);
-            rlEdit = itemView.findViewById(R.id.rl_edit);
+            ckOneChose = (CheckBox) itemView.findViewById(R.id.ck_chose);
+            ivShowPic = (ImageView) itemView.findViewById(R.id.iv_show_pic);
+            ivSub = (TextView) itemView.findViewById(R.id.iv_sub);
+            ivAdd = (TextView) itemView.findViewById(R.id.iv_add);
+            tvCommodityName = (TextView) itemView.findViewById(R.id.tv_commodity_name);
+            tvCommodityAttr = (TextView) itemView.findViewById(R.id.tv_commodity_attr);
+            tvCommodityPrice = (TextView) itemView.findViewById(R.id.tv_commodity_price);
+            tvCommodityNum = (TextView) itemView.findViewById(R.id.tv_commodity_num);
+            tvCommodityShowNum = (TextView) itemView.findViewById(R.id.tv_commodity_show_num);
+            tvCommodityDelete = (ImageView) itemView.findViewById(R.id.tv_commodity_delete);
+            rlEdit = (LinearLayout) itemView.findViewById(R.id.rl_edit);
         }
     }
 

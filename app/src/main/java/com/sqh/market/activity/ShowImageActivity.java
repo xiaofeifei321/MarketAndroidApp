@@ -121,11 +121,11 @@ public class ShowImageActivity extends Activity implements View.OnTouchListener,
      * 初始化绑定控件
      */
     private void init() {
-        imageView = findViewById(R.id.imageView);
+        imageView = (MyImageView) findViewById(R.id.imageView);
         imageView.setOnTouchListener(this);
-        mBtnBack = findViewById(R.id.img_back);
+        mBtnBack = (ImageView) findViewById(R.id.img_back);
         mBtnBack.setOnClickListener(this);
-        mProgressBar = findViewById(R.id.progress);
+        mProgressBar = (ProgressBar) findViewById(R.id.progress);
     }
 
     /**

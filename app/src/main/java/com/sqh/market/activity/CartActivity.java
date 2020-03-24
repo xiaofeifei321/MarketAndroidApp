@@ -183,12 +183,12 @@ public class CartActivity extends Activity implements View.OnClickListener,
      * 初始化绑定控件
      */
     private void init() {
-        btnBack = findViewById(R.id.cart_back);
-        ckAll = findViewById(R.id.ck_all);
-        tvShowPrice = findViewById(R.id.tv_show_price);
-        tvSettlement = findViewById(R.id.tv_settlement);
-        btnEdit = findViewById(R.id.btn_edit);
-        commodityListView = findViewById(R.id.list_shopping_cart);
+        btnBack = (ImageView) findViewById(R.id.cart_back);
+        ckAll = (CheckBox) findViewById(R.id.ck_all);
+        tvShowPrice = (TextView) findViewById(R.id.tv_show_price);
+        tvSettlement = (TextView) findViewById(R.id.tv_settlement);
+        btnEdit = (TextView) findViewById(R.id.btn_edit);
+        commodityListView = (ListView) findViewById(R.id.list_shopping_cart);
 
         btnEdit.setText("编辑");
         btnEdit.setOnClickListener(this);

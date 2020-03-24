@@ -45,12 +45,12 @@ public class SignupActivity extends AppCompatActivity {
     private String userName;
 
     private void init() {
-        _mobileText = findViewById(R.id.input_mobile);
-        _passwordText = findViewById(R.id.input_password);
-        _vertifyText = findViewById(R.id.input_verify);
-        _signupButton = findViewById(R.id.btn_signup);
-        _loginLink = findViewById(R.id.link_login);
-        _back = findViewById(R.id.signup_back);
+        _mobileText = (EditText) findViewById(R.id.input_mobile);
+        _passwordText = (EditText) findViewById(R.id.input_password);
+        _vertifyText = (EditText) findViewById(R.id.input_verify);
+        _signupButton = (Button) findViewById(R.id.btn_signup);
+        _loginLink = (TextView) findViewById(R.id.link_login);
+        _back = (ImageView) findViewById(R.id.signup_back);
     }
 
     @Override

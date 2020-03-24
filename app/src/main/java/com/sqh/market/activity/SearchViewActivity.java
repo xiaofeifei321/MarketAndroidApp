@@ -184,10 +184,10 @@ public class SearchViewActivity extends AppCompatActivity {
      * 初始化绑定控件
      */
     public void init() {
-        mSearchView = findViewById(R.id.searchView);
-        mListView = findViewById(R.id.listView);
-        history_tv = findViewById(R.id.tv_history);
-        cancel_tv = findViewById(R.id.tv_cancel);
+        mSearchView = (SearchView) findViewById(R.id.searchView);
+        mListView = (ListView) findViewById(R.id.listView);
+        history_tv = (TextView) findViewById(R.id.tv_history);
+        cancel_tv = (TextView) findViewById(R.id.tv_cancel);
     }
 
     /**

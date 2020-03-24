@@ -10,9 +10,9 @@ public class Constants {
     /**
      * web端基础地址
      */
-    public static final String BASE_URL = "http://wishes-blog.cn/market";
+//    public static final String BASE_URL = "http://wishes-blog.cn/market";
     //本地测试url
-    //public static final String BASE_URL = "http://192.168.0.103:8090";
+    public static final String BASE_URL = "http://192.168.1.170:8090";
 
     /**
      * 基础广告地址

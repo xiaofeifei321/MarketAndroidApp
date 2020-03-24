@@ -46,7 +46,7 @@ public class SoftwareSettingActivity extends AppCompatActivity {
                 Toast.makeText(SoftwareSettingActivity.this, "清除缓存成功！", Toast.LENGTH_LONG).show();
             }
         });
-        mBtnBack = findViewById(R.id.back);
+        mBtnBack = (ImageView) findViewById(R.id.back);
         mBtnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

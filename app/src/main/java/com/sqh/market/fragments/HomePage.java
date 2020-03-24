@@ -442,26 +442,26 @@ public class HomePage extends Fragment {
      */
     public void initView(View view) {
 
-        mRefreshLayout = view.findViewById(R.id.refresh_layout);
-        viewPager = view.findViewById(R.id.viewPager);
+        mRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.refresh_layout);
+        viewPager = (ViewPager) view.findViewById(R.id.viewPager);
         //初始化小圆点指示器
-        points = view.findViewById(R.id.points);
+        points = (ViewGroup) view.findViewById(R.id.points);
 
         //绑定两个进度条
-        hotProgressBar = view.findViewById(R.id.hot_progress);
-        recommendProgressBar = view.findViewById(R.id.recommend_progress);
+        hotProgressBar = (ProgressBar) view.findViewById(R.id.hot_progress);
+        recommendProgressBar = (ProgressBar) view.findViewById(R.id.recommend_progress);
 
 
-        banner = view.findViewById(R.id.banner);
+        banner = (Banner) view.findViewById(R.id.banner);
         //设置banner样式
         banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
         //设置图片加载器
         banner.setImageLoader(new GlideImageLoader());
 
 
-        hotProductGridView = view.findViewById(R.id.hot_gridview);
-        recommendProductGridView = view.findViewById(R.id.recommend_gridview);
-        searchView = view.findViewById(R.id.home_serachview);
+        hotProductGridView = (GridView) view.findViewById(R.id.hot_gridview);
+        recommendProductGridView = (GridView) view.findViewById(R.id.recommend_gridview);
+        searchView = (SearchView) view.findViewById(R.id.home_serachview);
 
     }
 

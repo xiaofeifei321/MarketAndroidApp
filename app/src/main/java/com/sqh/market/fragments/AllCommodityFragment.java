@@ -143,7 +143,7 @@ public class AllCommodityFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        mListView = view.findViewById(R.id.dataList);
+        mListView = (ListView) view.findViewById(R.id.dataList);
     }
 
     @Override
@@ -314,9 +314,9 @@ public class AllCommodityFragment extends Fragment {
      * 初始化控件。
      */
     public void init() {
-        mListView = getView().findViewById(R.id.dataList);
-        mRefreshLayout = getView().findViewById(R.id.refresh_layout);
-        searchView = getView().findViewById(R.id.serachview);
+        mListView = (ListView) getView().findViewById(R.id.dataList);
+        mRefreshLayout = (SwipeRefreshLayout) getView().findViewById(R.id.refresh_layout);
+        searchView = (SearchView) getView().findViewById(R.id.serachview);
         mProgressBar = getView().findViewById(R.id.progressLayout);
     }
 

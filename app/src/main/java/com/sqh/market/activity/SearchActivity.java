@@ -67,8 +67,8 @@ public class SearchActivity extends AppCompatActivity {
      * 初始化控件绑定
      */
     public void init() {
-        mToolbar = findViewById(R.id.toolbar);
-        mViewPager = findViewById(R.id.view_pager_menu);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mViewPager = (ViewPager) findViewById(R.id.view_pager_menu);
     }
 
     /**

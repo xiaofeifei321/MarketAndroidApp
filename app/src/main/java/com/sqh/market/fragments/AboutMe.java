@@ -61,13 +61,13 @@ public class AboutMe extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_about_me, null);
 
-        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
-        StrictMode.setVmPolicy(builder.build());
-        builder.detectFileUriExposure();
+//        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+//        StrictMode.setVmPolicy(builder.build());
+//        builder.detectFileUriExposure();
 
         //初始化控件并设置点击事件
-        mImageView = view.findViewById(R.id.cat_avatar);
-        mName = view.findViewById(R.id.cat_title);
+        mImageView = (ImageView) view.findViewById(R.id.cat_avatar);
+        mName = (TextView) view.findViewById(R.id.cat_title);
 
         //获得context
         Context context = getActivity().getApplicationContext();
@@ -90,11 +90,11 @@ public class AboutMe extends Fragment {
 
 
         //ToolBar
-        mToolbar = view.findViewById(R.id.toolbar);
+        mToolbar = (Toolbar) view.findViewById(R.id.toolbar);
 
         /*菜单们*/
         //购物车按钮
-        mBtnCart = view.findViewById(R.id.menu_cart);
+        mBtnCart = (LinearLayout) view.findViewById(R.id.menu_cart);
         mBtnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,7 +108,7 @@ public class AboutMe extends Fragment {
         });
 
         //历史购买按钮
-        mBtnBought = view.findViewById(R.id.menu_bought);
+        mBtnBought = (LinearLayout) view.findViewById(R.id.menu_bought);
         mBtnBought.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -122,7 +122,7 @@ public class AboutMe extends Fragment {
         });
 
         //个人中心按钮
-        mBtnUserInfo = view.findViewById(R.id.menu_user);
+        mBtnUserInfo = (LinearLayout) view.findViewById(R.id.menu_user);
         mBtnUserInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,7 +136,7 @@ public class AboutMe extends Fragment {
         });
 
         //关于我们按钮
-        mBtnAbout = view.findViewById(R.id.menu_about);
+        mBtnAbout = (LinearLayout) view.findViewById(R.id.menu_about);
         mBtnAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,7 +146,7 @@ public class AboutMe extends Fragment {
         });
 
         //设置按钮
-        mBtnSetting = view.findViewById(R.id.menu_setting);
+        mBtnSetting = (LinearLayout) view.findViewById(R.id.menu_setting);
         mBtnSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -31,8 +31,8 @@ public class AnimationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animation);
-        inLayout = findViewById(R.id.text_lin);//要显示的字体
-        hideLayout = findViewById(R.id.text_hide_lin);
+        inLayout = (LinearLayout) findViewById(R.id.text_lin);//要显示的字体
+        hideLayout = (LinearLayout) findViewById(R.id.text_hide_lin);
 
         //动画1
         Animation animation = AnimationUtils.loadAnimation(AnimationActivity.this, R.anim.text_splash_position);

@@ -314,7 +314,7 @@ public class DetailsActivity extends AppCompatActivity {
      * 初始化绑定控件
      */
     private void init() {
-        mBtnBuy = findViewById(R.id.btn_buy);
+        mBtnBuy = (Button) findViewById(R.id.btn_buy);
         //设置购买按钮的图标
         Drawable btnBuyDrawable = getResources().getDrawable(R.drawable.buy);
         //必须设置图片大小，否则不显示图片
@@ -335,7 +335,7 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
-        mBtnCart = findViewById(R.id.btn_cart);
+        mBtnCart = (Button) findViewById(R.id.btn_cart);
         //设置购物车按钮的图标
         Drawable btnCartDrawable = getResources().getDrawable(R.drawable.cart);
         //必须设置图片大小，否则不显示图片
@@ -355,7 +355,7 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
-        banner = findViewById(R.id.detail_banner);
+        banner = (Banner) findViewById(R.id.detail_banner);
         banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
         banner.setImageLoader(new GlideImageLoader());
         banner.setOnBannerListener(new OnBannerListener() {
@@ -367,14 +367,14 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
-        detailInfo = findViewById(R.id.detail_info);
-        detailSurplus = findViewById(R.id.detail_surplus);
-        detailName = findViewById(R.id.detail_name);
-        detailPrice = findViewById(R.id.detail_price);
+        detailInfo = (TextView) findViewById(R.id.detail_info);
+        detailSurplus = (TextView) findViewById(R.id.detail_surplus);
+        detailName = (TextView) findViewById(R.id.detail_name);
+        detailPrice = (TextView) findViewById(R.id.detail_price);
 
-        progressBar = findViewById(R.id.progress);
+        progressBar = (ProgressBar) findViewById(R.id.progress);
 
-        sameLinkGrid = findViewById(R.id.samelink_info_gridview);
+        sameLinkGrid = (GridView) findViewById(R.id.samelink_info_gridview);
         sameLinkGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -386,7 +386,7 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
-        imgBack = findViewById(R.id.detail_back);
+        imgBack = (ImageView) findViewById(R.id.detail_back);
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -219,18 +219,18 @@ public class PersonalActivity extends AppCompatActivity {
 
 
     private void init() {
-        mToolbar = findViewById(R.id.personal_toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.personal_toolbar);
         mWarnLayout = findViewById(R.id.user_info_show_layout);
-        mMenu = findViewById(R.id.tv_edit);
+        mMenu = (TextView) findViewById(R.id.tv_edit);
 
         mMenuLayout = findViewById(R.id.user_Info_edit_layout);
-        mImageView = findViewById(R.id.cat_avatar);
+        mImageView = (ImageView) findViewById(R.id.cat_avatar);
 
-        mNameText = findViewById(R.id.tv_username);
+        mNameText = (TextView) findViewById(R.id.tv_username);
 
-        mAccount = findViewById(R.id.account);
-        mUserNameText = findViewById(R.id.username);
-        mPasswordText = findViewById(R.id.password);
+        mAccount = (TextView) findViewById(R.id.account);
+        mUserNameText = (EditText) findViewById(R.id.username);
+        mPasswordText = (EditText) findViewById(R.id.password);
 
         //刷新数据
         getDataFromSp();

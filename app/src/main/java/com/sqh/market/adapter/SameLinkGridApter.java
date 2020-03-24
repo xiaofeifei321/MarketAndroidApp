@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -60,10 +62,10 @@ public class SameLinkGridApter extends BaseAdapter {
 
             //布局文件中所有组件的对象封装到ViewHolder对象中
             holder = new CommodityViewHolder();
-            holder.commodityName = convertView.findViewById(R.id.commodityName);
-            holder.commodityInfo = convertView.findViewById(R.id.commodityInfo);
-            holder.commodityPrice = convertView.findViewById(R.id.commodityPrice);
-            holder.img = convertView.findViewById(R.id.commodityImg);
+            holder.commodityName = (TextView) convertView.findViewById(R.id.commodityName);
+            holder.commodityInfo = (TextView) convertView.findViewById(R.id.commodityInfo);
+            holder.commodityPrice = (TextView) convertView.findViewById(R.id.commodityPrice);
+            holder.img = (ImageView) convertView.findViewById(R.id.commodityImg);
             //把ViewHolder对象封装到View对象中
             convertView.setTag(holder);
 

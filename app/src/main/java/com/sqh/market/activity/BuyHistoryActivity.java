@@ -134,7 +134,7 @@ public class BuyHistoryActivity extends AppCompatActivity {
      * 初始化绑定控件
      */
     private void init() {
-        btnBack = findViewById(R.id.buy_back);
+        btnBack = (ImageView) findViewById(R.id.buy_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,7 +142,7 @@ public class BuyHistoryActivity extends AppCompatActivity {
             }
         });
 
-        mBoughtHistoryList = findViewById(R.id.buy_list);
+        mBoughtHistoryList = (ListView) findViewById(R.id.buy_list);
         mBoughtHistoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -157,7 +157,7 @@ public class BuyHistoryActivity extends AppCompatActivity {
             }
         });
 
-        mProgressBar = findViewById(R.id.progress);
+        mProgressBar = (ProgressBar) findViewById(R.id.progress);
     }
 
     /**

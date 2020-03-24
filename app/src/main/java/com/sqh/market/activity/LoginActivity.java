@@ -50,10 +50,10 @@ public class LoginActivity extends AppCompatActivity {
     private TextView _signupLink;
 
     private void init() {
-        _mobile_Text = findViewById(R.id.input_mobile);
-        _passwordText = findViewById(R.id.input_password);
-        _loginButton = findViewById(R.id.btn_login);
-        _signupLink = findViewById(R.id.link_signup);
+        _mobile_Text = (EditText) findViewById(R.id.input_mobile);
+        _passwordText = (EditText) findViewById(R.id.input_password);
+        _loginButton = (Button) findViewById(R.id.btn_login);
+        _signupLink = (TextView) findViewById(R.id.link_signup);
     }
 
     @Override

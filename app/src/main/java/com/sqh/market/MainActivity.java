@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -281,18 +281,18 @@ public class MainActivity extends AppCompatActivity
         mFragments.add(new Classify());
         mFragments.add(new AboutMe());
 
-        mViewPage = findViewById(R.id.viewPage);
-        radioGroup = findViewById(R.id.radioGroup);
-        rb_home = findViewById(R.id.imageButton1);
-        rb_category = findViewById(R.id.imageButton2);
-        rb_mine = findViewById(R.id.imageButton5);
+        mViewPage = (MainActivityViewPager) findViewById(R.id.viewPage);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        rb_home = (RadioButton) findViewById(R.id.imageButton1);
+        rb_category = (RadioButton) findViewById(R.id.imageButton2);
+        rb_mine = (RadioButton) findViewById(R.id.imageButton5);
 
-        navigationView = findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         View headerView = navigationView.getHeaderView(0);
-        userHeaderInfoLayout = headerView.findViewById(R.id.user_header_info);
-        unLoginLayout = headerView.findViewById(R.id.un_login_dead);
-        mHeaderUserNameText = headerView.findViewById(R.id.user_name_header);
+        userHeaderInfoLayout = (LinearLayout) headerView.findViewById(R.id.user_header_info);
+        unLoginLayout = (RelativeLayout) headerView.findViewById(R.id.un_login_dead);
+        mHeaderUserNameText = (TextView) headerView.findViewById(R.id.user_name_header);
 
     }
 

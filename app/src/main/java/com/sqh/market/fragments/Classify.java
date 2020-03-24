@@ -251,11 +251,11 @@ public class Classify extends Fragment {
      */
     private void initViews(View view) {
         //一级菜单，绑定两个ListView控件
-        mCommodityTypeListView = view.findViewById(R.id.left);
-        mCommodityListView = view.findViewById(R.id.right);
+        mCommodityTypeListView = (ListView) view.findViewById(R.id.left);
+        mCommodityListView = (ListView) view.findViewById(R.id.right);
         mProgressBar = view.findViewById(R.id.progress);
 
-        searchView = view.findViewById(R.id.home_serachview);
+        searchView = (SearchView) view.findViewById(R.id.home_serachview);
 
         //商品类别菜单点击事件
         mCommodityTypeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

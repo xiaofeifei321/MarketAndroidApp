@@ -91,11 +91,11 @@ public class BuyHistoryAdapter extends BaseAdapter {
         TextView tvCommodityName, tvCommodityAttr, tvCommodityPrice, tvCommodityNum;
 
         public ViewHolder(View itemView) {
-            ivShowPic = itemView.findViewById(R.id.iv_show_pic);
-            tvCommodityName = itemView.findViewById(R.id.tv_commodity_name);
-            tvCommodityAttr = itemView.findViewById(R.id.tv_commodity_attr);
-            tvCommodityPrice = itemView.findViewById(R.id.tv_commodity_price);
-            tvCommodityNum = itemView.findViewById(R.id.tv_commodity_num);
+            ivShowPic = (ImageView) itemView.findViewById(R.id.iv_show_pic);
+            tvCommodityName = (TextView) itemView.findViewById(R.id.tv_commodity_name);
+            tvCommodityAttr = (TextView) itemView.findViewById(R.id.tv_commodity_attr);
+            tvCommodityPrice = (TextView) itemView.findViewById(R.id.tv_commodity_price);
+            tvCommodityNum = (TextView) itemView.findViewById(R.id.tv_commodity_num);
         }
     }
 }

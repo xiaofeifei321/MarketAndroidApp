@@ -46,7 +46,7 @@ public class MyCartDialog {
                     @Override
                     public void onClick(DialogPlus dialog, View view) {
                         View contentView = dialog.getHolderView();
-                        EditText editText = contentView.findViewById(R.id.et_count);
+                        EditText editText = (EditText) contentView.findViewById(R.id.et_count);
                         int count = Integer.parseInt(StringUtils.isBlank(editText.getText().toString()) ? "1"
                                 : editText.getText().toString());
 

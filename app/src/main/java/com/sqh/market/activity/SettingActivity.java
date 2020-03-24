@@ -34,7 +34,7 @@ public class SettingActivity extends AppCompatActivity {
         //将本activity也添加入需要关闭的list中
         MainActivity.activityList.add(this);
 
-        toolbar = findViewById(R.id.setting_toolbar);
+        toolbar = (Toolbar) findViewById(R.id.setting_toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
         toolbar.setTitle("设置");//设置ToolBar的标题
 
@@ -52,7 +52,7 @@ public class SettingActivity extends AppCompatActivity {
         });
 
         //绑定菜单控件
-        mBtnPersonal = findViewById(R.id.menu_personal_data);
+        mBtnPersonal = (LinearLayout) findViewById(R.id.menu_personal_data);
         mBtnPersonal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +60,7 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-        mBtnPic = findViewById(R.id.menu_pic_setting);
+        mBtnPic = (LinearLayout) findViewById(R.id.menu_pic_setting);
         mBtnPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +69,7 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-        mBtnExit = findViewById(R.id.menu_exit);
+        mBtnExit = (LinearLayout) findViewById(R.id.menu_exit);
         mBtnExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

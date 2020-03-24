@@ -1,7 +1,9 @@
 package com.sqh.market.activity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -32,8 +34,9 @@ public class AboutUsActivity extends AppCompatActivity {
     /**
      * 初始化绑定控件
      */
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     private void init() {
-        mBtnBack = findViewById(R.id.back);
+        mBtnBack = (ImageView) findViewById(R.id.back);
         mBtnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
